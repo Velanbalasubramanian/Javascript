@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call back function</title>
+  </head>
+  <body>
+    <h2>JavaScript Function Sequence</h2>
+    <p>JavaScript functions are executed in the sequence they are called.</p>
+    <p id="demo"></p>
+    <script>
+      function myDisplayer(some){
+        document.getElementById("demo").innerHTML=some;
+      }
+      function myFirst (){
+        myDisplayer("AB");
+      }
+      function mySecond (){
+        myDisplayer("CD");
+      }
+      myFirst();
+      mySecond();
+    </script>
+  </body>
+</html>
+
+<hr> 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call back function</title>
+  </head>
+  <body>
+    <h2>JavaScript Function Sequence control</h2>
+    <p>Sometimes you would like to have better control over when to execute a function.</p>
+    <p id="demo1"></p>
+    <script>
+      setTimeout(function() {  myCalculator(5,25,myDisplayer);},5000);
+    function myDisplayer(some){
+        document.getElementById("demo1").innerHTML= some;
+    }
+    function myCalculator(num1,num2,myCall) {
+        let sum = num1+num2;  
+      myCall(sum);                                                                                    
+    }
+      
+  
+    </script>
+  </body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call back function</title>
+  </head>
+  <body>
+    <h2>JavaScript Function Sequence control</h2>
+    <p>Sometimes you would like to have better control over when to execute a function.</p>
+    <p id="demo1"></p>
+    <script>
+    function myDisplayer(some){
+        document.getElementById("demo1").innerHTML= some;
+    }
+    function myCalculator(num1,num2) {
+        let sum = num1+num2;
+        myDisplayer(sum);                                                                                    
+    }
+     myCalculator(5,20);
+  
+    </script>
+  </body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call back function</title>
+  </head>
+  <body>
+    <h2>JavaScript Function Sequence control</h2>
+    <p>Sometimes you would like to have better control over when to execute a function.</p>
+    <p id="demo1"></p>
+    <script>
+    function myDisplayer(some){
+        document.getElementById("demo1").innerHTML= some;
+    }
+    function myCalculator(num1,num2) {
+        let sum = num1+num2;
+        return sum;                                                                                    
+    }
+    let result = myCalculator(5,4);
+    myDisplayer(result);
+    </script>
+  </body>
+</html>  -->
+

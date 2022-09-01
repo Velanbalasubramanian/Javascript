@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Functions running in parallel with other functions are called asynchronous</h1>
+    <h2>A good example is JavaScript setTimeout()</h2>
+    <p>Wait 5 seconds (5000 milliseconds) for this page to change.</p>
+    <h1 id="demo"></h1>
+    <script>
+ setTimeout(myFunction,5000);
+ function myFunction(){
+    document.getElementById("demo").innerHTML= "V";
+ }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Variable</title>
+  </head>
+  <body>
+    <h2>Global Variable</h2>
+<P id="demo"></P>
+<P id="demo"></P>
+    <!-- <script>  
+     const value = 500;
+     let value1= 40;
+     function D (){
+        alert(value);
+     }
+     function F (){
+        alert(value1);
+     }
+     D();
+     F();
+    </script>    normal global method-->
+    <script>
+      var value1 = 'preetha';
+      function c(){
+          window.value=4;
+        console.log(window.value);
+        document.write(window.value);
+        alert(window.value);
+        
+      }
+      c()
+      function d(){
+          document.write( "<br> "+ window.value1);
+          console.log(window.value1);
+        
+      }
+      d()
+      // let   myName = `Preetha <br> Chelladurai`;
+      // console.log(myName);
+      // document.write(myName)
+
+    </script>
+  </body>
+</html>
